@@ -1,0 +1,20 @@
+{
+  "name": "mono-repo",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "https://github.com/klugjo/lerna-typescript-react-storybook-jest",
+  "author": "Jonathan Klughertz <klughertz.j@gmail.com>",
+  "private": true,
+  "scripts": {
+    "install": "npx lerna bootstrap --hoist",
+    "clean": "npx lerna run clean && rm -rf node_modules",
+    "test": "npx lerna run test",
+    "build": "npx lerna run build",
+    "start": "npx lerna run start"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "microbundle": "^0.12.2"
+  }
+}
